@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+@media (max-width: 93.75em) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 65.625em) {
+  html {
+    font-size: 8px;
+  }
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  font-weight: 500;
+  font-family: Raleway;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: 5rem;
+  color: var(--color-dark-1);
+}
+@media (max-width: 93.75em) {
+  .heading-secondary {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+}
+
+svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.platform-services,
+.public-cloud-services {
+  grid-column: full-start/full-end;
+  width: 100%;
+  overflow: hidden;
+}
+.platform-services .heading-secondary,
+.public-cloud-services .heading-secondary {
+  width: calc(128rem + 160px);
+  padding: 0 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 65.625em) {
+  .platform-services .heading-secondary,
+  .public-cloud-services .heading-secondary {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 31.25em) {
+  .platform-services .heading-secondary,
+  .public-cloud-services .heading-secondary {
+    padding: 0 20px;
+  }
+}
+.platform-services .scroll-container,
+.public-cloud-services .scroll-container {
+  display: flex;
+}
+@media (max-width: 65.625em) {
+  .platform-services .scroll-container,
+  .public-cloud-services .scroll-container {
+    flex-direction: column;
+    gap: 10rem;
+  }
+}
+.platform-services .scroll-container .scroll-section,
+.public-cloud-services .scroll-container .scroll-section {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+}
+@media (max-width: 65.625em) {
+  .platform-services .scroll-container .scroll-section,
+  .public-cloud-services .scroll-container .scroll-section {
+    flex-direction: column;
+  }
+}
+.platform-services .scroll-container .scroll-section .content,
+.public-cloud-services .scroll-container .scroll-section .content {
+  font-size: 1.8rem;
+  color: var(--color-dark-2);
+  line-height: 1.4;
+}
+.platform-services .scroll-container .scroll-section .logo,
+.public-cloud-services .scroll-container .scroll-section .logo {
+  width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 65.625em) {
+  .platform-services .scroll-container .scroll-section .logo,
+  .public-cloud-services .scroll-container .scroll-section .logo {
+    justify-content: flex-start;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 31.25em) {
+  .platform-services .scroll-container .scroll-section .logo,
+  .public-cloud-services .scroll-container .scroll-section .logo {
+    padding: 0 20px;
+  }
+}
+.platform-services .scroll-container .scroll-section .logo svg,
+.public-cloud-services .scroll-container .scroll-section .logo svg {
+  width: 25vw;
+}
+@media (max-width: 65.625em) {
+  .platform-services .scroll-container .scroll-section .logo svg,
+  .public-cloud-services .scroll-container .scroll-section .logo svg {
+    width: 50vw;
+  }
+}
+.platform-services .scroll-container .scroll-section .content-container,
+.public-cloud-services .scroll-container .scroll-section .content-container {
+  width: 70%;
+  padding: 0 5rem;
+  flex-shrink: 0;
+}
+@media (max-width: 65.625em) {
+  .platform-services .scroll-container .scroll-section .content-container,
+  .public-cloud-services .scroll-container .scroll-section .content-container {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 31.25em) {
+  .platform-services .scroll-container .scroll-section .content-container,
+  .public-cloud-services .scroll-container .scroll-section .content-container {
+    padding: 0 20px;
+  }
+}
+.platform-services .scroll-container .scroll-section .content-container,
+.public-cloud-services .scroll-container .scroll-section .content-container {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 65.625em) {
+  .platform-services .scroll-container .scroll-section .content-container,
+  .public-cloud-services .scroll-container .scroll-section .content-container {
+    gap: 3rem;
+  }
+}
+.platform-services .scroll-container .scroll-section .list-content,
+.public-cloud-services .scroll-container .scroll-section .list-content {
+  margin: 0 auto;
+  margin-top: 2rem;
+  -moz-column-count: 2;
+  column-count: 2;
+  max-width: 600px;
+}
+@media (max-width: 65.625em) {
+  .platform-services .scroll-container .scroll-section .list-content,
+  .public-cloud-services .scroll-container .scroll-section .list-content {
+    margin: 0;
+  }
+}
+@media (max-width: 31.25em) {
+  .platform-services .scroll-container .scroll-section .list-content,
+  .public-cloud-services .scroll-container .scroll-section .list-content {
+    -moz-column-count: 1;
+    column-count: 1;
+    margin: 0;
+    margin-top: 2rem;
+  }
+}
+.platform-services .scroll-container .scroll-section .list-content a,
+.public-cloud-services .scroll-container .scroll-section .list-content a {
+  text-decoration: underline;
+  color: var(--get-form-purple);
+}
+.platform-services .scroll-container .scroll-section .list-content li,
+.public-cloud-services .scroll-container .scroll-section .list-content li {
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--color-dark-1);
+}
+
+.heading-secondary-2 {
+  margin: 150px;
+  margin-top: 200px;
+}
+.heading-secondary-2 h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.heading-secondary-2 p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: grey;
+  font-weight: 400;
+}
+.top-cont {
+  margin: 300px 150px;
+}
+.top-cont p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: grey;
+  font-weight: 400;
+}
